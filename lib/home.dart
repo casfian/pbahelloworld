@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/screens/burgers.dart';
 import 'package:helloworld/screens/pizza.dart';
+import 'package:helloworld/screens/reviews.dart';
 import 'package:helloworld/widgets/row1_widget.dart';
 import 'package:helloworld/widgets/row2_widget.dart';
 import 'package:helloworld/widgets/row3_widget.dart';
@@ -56,6 +57,14 @@ class Home extends StatelessWidget {
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Burgers()));
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.list, size: 32, color: Colors.orange,),
+                title: const Text('Reviews'),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Reviews()));
                 },
               ),
             ],
