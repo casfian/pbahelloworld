@@ -30,7 +30,7 @@ class BuyNow extends StatelessWidget {
           ),
           const Text('Quantity'),
           const Padding(
-            padding: EdgeInsets.fromLTRB(150, 130, 150, 0),
+            padding: EdgeInsets.fromLTRB(150, 30, 150, 0),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
