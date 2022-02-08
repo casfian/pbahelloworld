@@ -11,9 +11,9 @@ class Burgers extends StatefulWidget {
 
 class _BurgersState extends State<Burgers> {
   List<Burger> burgersArray = [
-    Burger('Burger 1', 'Rm12.00', 'burger.png'),
-    Burger('Burger 2', 'RM12.60', 'burger.png'),
-    Burger('Burger 3', 'RM16.00', 'burger.png'),
+    Burger('Burger 1', '12.00', 'burger.png'),
+    Burger('Burger 2', '12.60', 'burger.png'),
+    Burger('Burger 3', '16.00', 'burger.png'),
   ];
 
   @override
@@ -38,7 +38,7 @@ class _BurgersState extends State<Burgers> {
             trailing: ElevatedButton(
                 onPressed: () {
                   print('I buy burger $index');
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNow()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNow(selected: burgersArray[index] )));
                 },
                 child: Text('Buy now')),
           );
