@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/screens/burgers.dart';
+import 'package:helloworld/screens/pizza.dart';
 
 class Row2Widget extends StatelessWidget {
   const Row2Widget({Key? key}) : super(key: key);
@@ -26,6 +28,7 @@ class Row2Widget extends StatelessWidget {
           onTap: () {
             //code here
             print('I clicked Pizza');
+            Navigator.push(context, MaterialPageRoute(builder:(context)=>const Pizza()));
           },
           child: Container(
               width: 85,
@@ -51,6 +54,7 @@ class Row2Widget extends StatelessWidget {
         InkWell(
           onTap: () {
             print('I clicked burgers');
+            Navigator.push(context, MaterialPageRoute(builder:(context)=>const Burgers()));
           },
           child: Container(
               width: 85,
