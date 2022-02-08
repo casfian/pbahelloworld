@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/screens/burgers.dart';
+import 'package:helloworld/screens/pizza.dart';
 import 'package:helloworld/widgets/row1_widget.dart';
 import 'package:helloworld/widgets/row2_widget.dart';
 import 'package:helloworld/widgets/row3_widget.dart';
@@ -32,7 +34,33 @@ class Home extends StatelessWidget {
         ],
       ),
       drawer: Drawer(
-        child: Container(),
+        child: Container(
+          child: ListView(
+            children: [
+              const ListTile(
+                leading: Icon(Icons.home, size: 33, color: Colors.orange,
+                ),
+                title: Text('Home'),
+              ),
+              ListTile(
+                leading: Image.asset('assets/images/pizza.png'),
+                title:  const Text('Pizza'),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Pizza()));
+                },
+              ),
+              ListTile(
+                leading: Image.asset('assets/images/burger.png'),
+                title: const Text('Burgers'),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Burgers()));
+                },
+              ),
+            ],
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
