@@ -23,14 +23,17 @@ class Home extends StatelessWidget {
         //backgroundColor: Colors.blue,
         elevation: 0,
         actions: [
-          IconButton(onPressed: () {
-
-          }, icon: const Icon(Icons.search, color: Colors.black,))
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.search,
+                color: Colors.black,
+              ))
         ],
       ),
       drawer: Drawer(
         child: Container(),
-        ),
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
@@ -41,45 +44,53 @@ class Home extends StatelessWidget {
               children: const [
                 //Row1
                 Row1Widget(),
-      
+
                 SizedBox(
                   height: 30,
                 ),
-      
+
                 //Row2
                 Row2Widget(),
-      
+
                 SizedBox(
                   height: 30,
                 ),
-      
+
                 //Row3
                 Row3Widget(),
-      
+
                 SizedBox(
                   height: 30,
                 ),
-      
+
                 //Row4
                 Row4Widget(),
-      
+
                 SizedBox(
                   height: 30,
                 ),
-      
+
                 //Row5
                 Row5Widget(),
-      
+
                 SizedBox(
                   height: 30,
                 ),
-      
+
                 //Row6
                 Row6Widget(),
               ],
             ),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black,
+        onPressed: () {
+          //code
+          print('I click Button Button');
+        },
+        child: const Icon(Icons.forward),
       ),
     );
   }
