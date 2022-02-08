@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
                 title: const Text('Burgers'),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Burgers()));
+                      MaterialPageRoute(builder: (context) => Burgers()));
                 },
               ),
             ],

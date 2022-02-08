@@ -54,7 +54,7 @@ class Row2Widget extends StatelessWidget {
         InkWell(
           onTap: () {
             print('I clicked burgers');
-            Navigator.push(context, MaterialPageRoute(builder:(context)=>const Burgers()));
+            Navigator.push(context, MaterialPageRoute(builder:(context)=>Burgers()));
           },
           child: Container(
               width: 85,

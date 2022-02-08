@@ -18,6 +18,10 @@ class Row4Widget extends StatelessWidget {
               width: 252,
               height: 148,
               child: Center(child: Image.asset('assets/images/pizza2.png'))),
+          SizedBox(
+              width: 252,
+              height: 148,
+              child: Center(child: Image.asset('assets/images/pizza3.png'))),
         ],
       ),
     );
