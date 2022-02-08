@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/screens/buynow.dart';
 
 class Pizza extends StatelessWidget {
   const Pizza({Key? key}) : super(key: key);
@@ -24,6 +25,7 @@ class Pizza extends StatelessWidget {
             trailing: ElevatedButton(
                 onPressed: () {
                   print('Buy Pizza 1');
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNow()));
                 },
                 child: const Text('Buy Now')),
           ),
@@ -34,6 +36,7 @@ class Pizza extends StatelessWidget {
             trailing: ElevatedButton(
                 onPressed: () {
                   print('Buy Pizza 2');
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNow()));
                 },
                 child: const Text('Buy Now')),
           ),
@@ -44,6 +47,7 @@ class Pizza extends StatelessWidget {
             trailing: ElevatedButton(
                 onPressed: () {
                   print('Buy Pizza 3');
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNow()));
                 },
                 child: const Text('Buy Now')),
           ),
