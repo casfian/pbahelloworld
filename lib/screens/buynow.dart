@@ -18,18 +18,28 @@ class BuyNow extends StatelessWidget {
       body: Center(
           child: Column(
         children: [
-          const SizedBox(height: 40,),
+          const SizedBox(
+            height: 40,
+          ),
           const Text(
             'Burger X',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 30,),
+          const SizedBox(
+            height: 30,
+          ),
           const Text('Quantity'),
           const Padding(
-            padding: EdgeInsets.fromLTRB(150, 0, 150, 0),
-            child: TextField(),
+            padding: EdgeInsets.fromLTRB(150, 130, 150, 0),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+              ),
+            ),
           ),
-          const SizedBox(height: 30,),
+          const SizedBox(
+            height: 30,
+          ),
           ElevatedButton(
               onPressed: () {
                 //code
