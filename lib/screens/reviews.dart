@@ -62,9 +62,10 @@ class _ReviewsState extends State<Reviews> {
                   itemBuilder: (context, index) {
                     return Card(
                       child: ListTile(
+                        leading: const Icon(Icons.person, size: 32, color: Colors.orange,) ,
                           title: Text(
                             snapshot.data[index]['title'],
-                            style: TextStyle(color: Colors.blue),
+                            style: const TextStyle(color: Colors.blue),
                           ),
                           subtitle: Text(snapshot.data[index]['body'])),
                     );
@@ -76,8 +77,3 @@ class _ReviewsState extends State<Reviews> {
     );
   }
 }
-
-
-/*
-
-*/
